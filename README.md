@@ -229,5 +229,4 @@ Développé pour l'intégration WordPress et WooCommerce.
 
 ---
 
-**Note** : Ce plugin est conçu pour fonctionner avec WooCommerce. Assurez-vous que WooCommerce est correctement installé et configuré avant d'utiliser ce plugin. #   c h e c k o u t - a f t e r - p r o d u c t  
- 
+**Note** : Ce plugin est conçu pour fonctionner avec WooCommerce. Assurez-vous que WooCommerce est correctement installé et configuré avant d'utiliser ce plugin. #
