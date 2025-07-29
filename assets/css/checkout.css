@@ -1,0 +1,630 @@
+/* Checkout After Product Plugin Styles */
+
+/* Hide WooCommerce add to cart and quantity elements */
+.woocommerce .single-product .cart,
+.woocommerce .single-product .quantity,
+.woocommerce .single-product .single_add_to_cart_button,
+.woocommerce .single-product .variations_form,
+.woocommerce .single-product .woocommerce-variation-add-to-cart {
+    display: none !important;
+}
+
+/* Mode Selection Styles */
+.cap-mode-selection {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.cap-mode-selection h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cap-mode-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cap-mode-option {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cap-mode-option input[type="radio"] {
+    display: none;
+}
+
+.cap-mode-option label {
+    display: block;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.cap-mode-option input[type="radio"]:checked + label {
+    border-color: #007cba;
+    background: #e3f2fd;
+    box-shadow: 0 2px 8px rgba(0, 124, 186, 0.2);
+}
+
+.cap-mode-icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cap-mode-title {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.cap-mode-description {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Add to Cart Section Styles */
+.cap-add-to-cart-section {
+    margin: 30px 0;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cap-add-to-cart-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.cap-add-to-cart-container h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007cba;
+}
+
+.cap-product-info {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.cap-product-name {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.cap-product-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #007cba;
+}
+
+.cap-quantity-section {
+    margin-bottom: 25px;
+}
+
+.cap-quantity-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.cap-quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.cap-quantity-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #007cba;
+    background: #007cba;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cap-quantity-btn:hover {
+    background: #005a8b;
+    border-color: #005a8b;
+    transform: translateY(-1px);
+}
+
+.cap-quantity-btn:active {
+    transform: translateY(0);
+}
+
+.cap-quantity-input {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    background: #fff;
+}
+
+.cap-quantity-input:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.1);
+}
+
+.cap-add-to-cart-actions {
+    text-align: center;
+}
+
+.cap-add-to-cart-btn {
+    background: #007cba;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.cap-add-to-cart-btn:hover {
+    background: #005a8b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 124, 186, 0.3);
+}
+
+.cap-add-to-cart-btn:active {
+    transform: translateY(0);
+}
+
+.cap-checkout-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cap-checkout-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cap-checkout-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Product summary is now hidden in the simplified form */
+.cap-product-summary {
+    display: none;
+}
+
+.cap-product-image {
+    display: none;
+}
+
+.cap-product-details {
+    display: none;
+}
+
+.cap-product-price {
+    display: none;
+}
+
+.cap-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.cap-form-section {
+    margin-bottom: 30px;
+}
+
+.cap-form-section h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007cba;
+}
+
+.cap-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cap-form-field {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.cap-form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.cap-form-field input,
+.cap-form-field select,
+.cap-form-field textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.cap-form-field input:focus,
+.cap-form-field select:focus,
+.cap-form-field textarea:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.1);
+}
+
+.cap-form-field input.error,
+.cap-form-field select.error,
+.cap-form-field textarea.error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+
+
+.cap-order-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.cap-summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cap-summary-item:last-child {
+    border-bottom: none;
+}
+
+.cap-summary-item.cap-total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007cba;
+    border-top: 2px solid #007cba;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.cap-form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cap-submit-btn {
+    background: #007cba;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.cap-submit-btn:hover {
+    background: #005a8b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 124, 186, 0.3);
+}
+
+.cap-submit-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.cap-submit-btn:disabled:hover {
+    background: #6c757d;
+    transform: none;
+    box-shadow: none;
+}
+
+#cap-messages {
+    margin-top: 20px;
+}
+
+.cap-message {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cap-message.cap-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.cap-message.cap-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.cap-message.cap-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cap-checkout-section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .cap-form {
+        padding: 20px;
+    }
+    
+    .cap-form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cap-product-summary {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .cap-product-details {
+        text-align: center;
+    }
+    
+    .cap-submit-btn {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    .cap-checkout-section h2 {
+        font-size: 24px;
+    }
+    
+    .cap-product-price {
+        font-size: 20px;
+    }
+    
+    /* Mode selection responsive */
+    .cap-mode-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cap-mode-option {
+        min-width: auto;
+    }
+    
+    .cap-mode-option label {
+        padding: 15px;
+    }
+    
+    .cap-mode-icon {
+        font-size: 20px;
+    }
+    
+    .cap-mode-title {
+        font-size: 14px;
+    }
+    
+    .cap-mode-description {
+        font-size: 12px;
+    }
+    
+    /* Add to cart responsive */
+    .cap-add-to-cart-section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .cap-add-to-cart-container {
+        padding: 20px;
+    }
+    
+    .cap-quantity-controls {
+        max-width: 180px;
+    }
+    
+    .cap-quantity-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .cap-quantity-input {
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .cap-add-to-cart-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cap-checkout-section {
+        padding: 15px;
+    }
+    
+    .cap-form {
+        padding: 15px;
+    }
+    
+    .cap-form-field input,
+    .cap-form-field select,
+    .cap-form-field textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .cap-submit-btn {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
+/* Animation for form sections */
+.cap-form-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading spinner for submit button */
+.cap-submit-btn.loading {
+    position: relative;
+    color: transparent;
+}
+
+.cap-submit-btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Loading state for city field */
+.cap-form-field.loading {
+    position: relative;
+}
+
+.cap-form-field.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    border: 2px solid #007cba;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    pointer-events: none;
+}
+
+.cap-form-field.loading select {
+    padding-right: 40px;
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.cap-form-field.loading label {
+    color: #007cba;
+    font-weight: 600;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Focus styles for accessibility */
+.cap-form-field input:focus,
+.cap-form-field select:focus,
+.cap-submit-btn:focus {
+    outline: 2px solid #007cba;
+    outline-offset: 2px;
+}
+
+
+
+/* Print styles */
+@media print {
+    .cap-checkout-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .cap-submit-btn {
+        display: none;
+    }
+} 
